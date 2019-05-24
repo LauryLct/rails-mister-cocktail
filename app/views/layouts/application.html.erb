@@ -14,6 +14,38 @@
   </head>
 
   <body>
+     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Home", @cocktails_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "New cocktail", new_cocktail_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "New ci", "#", class: "dropdown-item" %>
+          <%= link_to "Another action", "#", class: "dropdown-item" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://guardian.ng/wp-content/uploads/2018/06/Various-cocktails.-Photo-Getty-Images.jpg)">
+        <h1 class="titre">L'apero du Wagon</h1>
+    </div>
+
+
+
     <div class="container">
     <%= yield %>
     </div>
